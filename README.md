@@ -398,46 +398,5 @@ Future development of SAIROS can focus on:
 
 ---
 
-# Team
-
-**Project:** SAIROS – AI-Powered Underground Mine Safety, Monitoring and Rescue Rover
-
-**Institution:** Dnyaan Prasad Global University
-
-**Smart India Hackathon Problem Statement ID:** SIH26039
-
-### Team Members
-
-* Aditi
-* Shantanu
-* Sujal
-* Rasika
-* Om
-* Ishwari
-
----
-
-# References
-
-The project is based on research and technical documentation related to:
-
-* Underground mine-rescue robotics
-* Mine safety and monitoring
-* YOLO-based object/person detection
-* LiDAR and SLAM
-* Raspberry Pi
-* ESP32
-* OpenWrt
-* BATMAN-adv
-* MQTT
-* Wireless mesh networks
-
-Detailed references and links will be added to the `docs/references/` section of this repository.
-
----
-
-## Project Status
-
-**SAIROS is currently under development.**
 
 The repository will be updated as hardware integration, software development, AI testing, navigation testing, communication testing and dashboard development progress.
