@@ -15,3 +15,9 @@ Underground coal mines can have hazardous conditions such as toxic gases, low ox
 Entering an unknown mines section can expose rescue personnel to additional risks. It can also taken time to understand what has happened inside the mine.
 
 The problem  statement therefore requires a system that can  operate in the hazardous underground environments, monitor mine conditions, provide visual information, detect hazards,assist in locating trapped workers and help rescue teams make better decisions.
+
+### Proposed Solution
+
+SAIROS is a six-wheel AI-Powered ground rover developed for underground mine safety, monitoring and rescue support. The rover carries gas sensors, temperature and humidity sensors, thermal and low-light camera, ultrasonic sensors and YDLiDAR X2. It collects information from the underground environment and sends data to base station. The Raspberry Pi 4 and ESP32 acts as a main controlling unit. YOLOv8 is used for AI-based person detection while OpenCV is used for image and video processing. For underground mine communication, TP-Link Archer Wi-Fi nodes are used to create a multi-hop mesh network. MQTT is used for transmitting data and alerts to the monitoring system.
+
+
