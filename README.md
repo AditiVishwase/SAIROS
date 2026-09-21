@@ -400,5 +400,3 @@ Future development of SAIROS can focus on:
 
 ---
 
-
-The repository will be updated as hardware integration, software development, AI testing, navigation testing, communication testing and dashboard development progress.
