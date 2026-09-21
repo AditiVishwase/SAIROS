@@ -129,13 +129,14 @@ The main hardware planned for the SAIROS rover includes:
 | Raspberry Pi 4B            | Main processing, AI and data handling |
 | ESP32                      | Sensor interfacing and rover control  |
 | Six-wheel chassis          | Rover mobility                        |
-| Geared DC motors           | Drive system                          |
+| RHINO 24V DC 60 RPM 
+| geared motor.              | Drive system                          |
 | BTS7960 motor drivers      | Motor control                         |
 | 24 V LiFePO4 battery       | Main power source                     |
 | MQ/TGS gas sensors         | Gas monitoring                        |
 | SHT31                      | Temperature and humidity monitoring   |
 | MLX90640                   | Thermal imaging                       |
-| Low-light camera           | Visual monitoring in dark areas       |
+| Caddx Baby Ratel 2         | Visual monitoring in dark areas       |
 | HC-SR04                    | Short-range obstacle detection        |
 | YDLIDAR X2                 | 2D scanning and navigation            |
 | TP-Link Archer Wi-Fi nodes | Wireless mesh communication           |
