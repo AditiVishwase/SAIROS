@@ -13,6 +13,7 @@ The main idea is to send the rover into a mine area where it may not be safe for
 
 The rescue team can use the information from the rover to understand the underground situation, monitor hazardous conditions, detect people and observe the path taken by the rover.
 
+
 ---
 
 ## Problem Statement
