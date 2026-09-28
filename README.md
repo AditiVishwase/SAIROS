@@ -307,7 +307,7 @@ SAIROS is intended to support rescue teams during underground mine emergencies.
 
 The system can help by:
 
-* Providing information before rescuers enter a hazardous area
+* Providing real time information before rescuers enters a hazardous area
 * Monitoring underground environmental conditions
 * Assisting in locating people
 * Providing visual information from dark areas
