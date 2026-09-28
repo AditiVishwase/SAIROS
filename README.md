@@ -1,11 +1,11 @@
-# SAIROS – AI-Powered Underground Mine Safety, Monitoring and Rescue Rover
+# 🚨 SAIROS – AI-Powered Underground Mine Safety, Monitoring and Rescue Rover
 
-**Smart India Hackathon 2026**
+**Smart India Hackathon 2026**  
 **Problem Statement ID:** SIH26039
 
 ---
 
-## About the Project
+## ⛏️ About the Project
 
 SAIROS is a six-wheel ground rover being developed for underground mine safety, monitoring and rescue support.
 
@@ -13,10 +13,9 @@ The main idea is to send the rover into a mine area where it may not be safe for
 
 The rescue team can use the information from the rover to understand the underground situation, monitor hazardous conditions, detect people and observe the path taken by the rover.
 
-
 ---
 
-## Problem Statement
+## ⚠️ Problem Statement
 
 Underground coal mines can have hazardous conditions such as toxic gases, low oxygen levels, poor visibility, high temperature, obstacles, flooding and mine collapses. During an emergency, the rescue team may not have enough information about the affected area before entering it.
 
@@ -28,7 +27,7 @@ SAIROS focuses on the ground-rover approach to this problem.
 
 ---
 
-## Our Proposed Solution
+## 💡 Our Proposed Solution
 
 SAIROS is designed as a six-wheel mine-rescue rover that can be remotely operated in underground mine passages.
 
@@ -49,7 +48,7 @@ The system is divided into sensing, processing, navigation, communication and mo
 
 ---
 
-## How SAIROS Works
+## 🔄 How SAIROS Works
 
 The basic working flow is:
 
@@ -67,11 +66,11 @@ The collected data is transmitted through Archer Wi-Fi mesh nodes. MQTT is used 
 
 ---
 
-# System Architecture
+# 🏗️ System Architecture
 
 The SAIROS system can be understood through five main parts:
 
-### 1. Sensing Layer
+### 🌡️ 1. Sensing Layer
 
 The rover collects information from the mine using:
 
@@ -84,13 +83,13 @@ The rover collects information from the mine using:
 
 These sensors provide information about the environment and the rover's surroundings.
 
-### 2. Control and Processing Layer
+### ⚙️ 2. Control and Processing Layer
 
 The **ESP32** handles sensor interfacing and rover-control functions.
 
 The **Raspberry Pi 4B** acts as the main processing unit. It handles camera processing, AI inference, LiDAR-related processing and communication with the other system components.
 
-### 3. AI and Vision Layer
+### 👁️ 3. AI and Vision Layer
 
 The camera provides the visual input.
 
@@ -98,7 +97,7 @@ The camera provides the visual input.
 
 **YOLOv8** is used for person detection from the camera feed. The detection result can be sent to the monitoring station as part of the rover's situational information.
 
-### 4. Navigation Layer
+### 🗺️ 4. Navigation Layer
 
 The **YDLIDAR X2** scans the surrounding area and provides 2D distance information.
 
@@ -106,7 +105,7 @@ The LiDAR data can be used for mapping, obstacle awareness and navigation-relate
 
 The ultrasonic sensors provide additional short-range obstacle information.
 
-### 5. Communication and Monitoring Layer
+### 📡 5. Communication and Monitoring Layer
 
 **TP-Link Archer Wi-Fi nodes** are used to build the wireless mesh network.
 
@@ -120,68 +119,67 @@ The base station dashboard displays the information received from the rover.
 
 ---
 
-# Hardware
+# 🔧 Hardware
 
 The main hardware planned for the SAIROS rover includes:
 
-| Component                  | Purpose                               |
+| Component | Purpose |
 | -------------------------- | ------------------------------------- |
-| Raspberry Pi 4B            | Main processing, AI and data handling |
-| ESP32                      | Sensor interfacing and rover control  |
-| Six-wheel chassis          | Rover mobility                        |
-| RHINO 24V DC 60 RPM 
-| geared motor.              | Drive system                          |
-| BTS7960 motor drivers      | Motor control                         |
-| 24 V LiFePO4 battery       | Main power source                     |
-| MQ/TGS gas sensors         | Gas monitoring                        |
-| SHT31                      | Temperature and humidity monitoring   |
-| MLX90640                   | Thermal imaging                       |
-| Caddx Baby Ratel 2         | Visual monitoring in dark areas       |
-| HC-SR04                    | Short-range obstacle detection        |
-| YDLIDAR X2                 | 2D scanning and navigation            |
-| TP-Link Archer Wi-Fi nodes | Wireless mesh communication           |
+| Raspberry Pi 4B | Main processing, AI and data handling |
+| ESP32 | Sensor interfacing and rover control |
+| Six-wheel chassis | Rover mobility |
+| RHINO 24V DC 60 RPM geared motor | Drive system |
+| BTS7960 motor drivers | Motor control |
+| 24 V LiFePO4 battery | Main power source |
+| MQ/TGS gas sensors | Gas monitoring |
+| SHT31 | Temperature and humidity monitoring |
+| MLX90640 | Thermal imaging |
+| Caddx Baby Ratel 2 | Visual monitoring in dark areas |
+| HC-SR04 | Short-range obstacle detection |
+| YDLIDAR X2 | 2D scanning and navigation |
+| TP-Link Archer Wi-Fi nodes | Wireless mesh communication |
 
 The final hardware configuration may be updated as the prototype is tested.
 
 ---
 
-# Software and Technologies
+# 🧑‍💻 Software and Technologies
 
-## Python
+## 🐍 Python
 
 Python is used for system programming, data processing and integration between different software components.
 
-## YOLOv8
+## 🤖 YOLOv8
 
 YOLOv8 is used for AI-based person detection from the rover's camera feed.
 
-## OpenCV
+## 👁️ OpenCV
 
 OpenCV is used to capture and process camera frames and prepare visual data for further processing.
 
-## OpenWrt
+## 🌐 OpenWrt
 
 OpenWrt is used as the customizable operating system/networking platform on supported Wi-Fi routers.
 
-## BATMAN-adv
+## 📡 BATMAN-adv
 
 BATMAN-adv is used to create the multi-hop wireless mesh network between the communication nodes.
 
-## MQTT
+## 📩 MQTT
 
 MQTT is used for lightweight communication of sensor values, status information and alerts.
 
-## SLAM / Navigation Software
+## 🗺️ SLAM / Navigation Software
 
 SLAM and navigation software use LiDAR and rover movement information to support mapping, localization and navigation inside the mine where GPS is not available.
 
-## Monitoring Dashboard
+## 📊 Monitoring Dashboard
 
 The dashboard provides the rescue team with a common place to view sensor readings, alerts, video, person detections and navigation information.
 
 ---
 
-# Communication System
+# 📡 Communication System
 
 Communication is an important part of the SAIROS design because underground mine passages may not provide a direct wireless path to the base station.
 
@@ -201,7 +199,7 @@ The system is intended to support low-resolution live video together with sensor
 
 ---
 
-# AI and Person Detection
+# 🤖 AI and Person Detection
 
 One of the important functions of SAIROS is assisting in the detection of people inside the mine.
 
@@ -217,7 +215,7 @@ AI detection is intended as a rescue-support function and should be used togethe
 
 ---
 
-# Navigation and Mapping
+# 🗺️ Navigation and Mapping
 
 Underground mines do not provide reliable GPS coverage. Therefore, the rover needs another method to understand its surroundings.
 
@@ -237,7 +235,7 @@ The communication nodes can also be associated with known mine sections to provi
 
 ---
 
-# Monitoring Dashboard
+# 📊 Monitoring Dashboard
 
 The base station dashboard is designed to give the rescue team a simple view of the information coming from the rover.
 
@@ -257,7 +255,7 @@ The goal is to bring the important information into one place instead of requiri
 
 ---
 
-# Key Features
+# ✨ Key Features
 
 * Six-wheel ground rover for underground inspection
 * Gas monitoring
@@ -275,7 +273,7 @@ The goal is to bring the important information into one place instead of requiri
 
 ---
 
-# Innovation
+# 💡 Innovation
 
 The main idea behind SAIROS is the combination of several functions in one underground rescue-support rover.
 
@@ -289,7 +287,7 @@ The modular design also makes it possible to change or improve individual parts 
 
 ---
 
-# Feasibility
+# ✅ Feasibility
 
 SAIROS is being developed using commercially available components and commonly used software technologies.
 
@@ -303,7 +301,7 @@ This makes the prototype suitable for step-by-step development and testing.
 
 ---
 
-# Expected Impact
+# 🌍 Expected Impact
 
 SAIROS is intended to support rescue teams during underground mine emergencies.
 
@@ -321,7 +319,7 @@ SAIROS is a rescue-support system and is not intended to replace trained rescue 
 
 ---
 
-# Current Development Status
+# 🚧 Current Development Status
 
 The project is being developed in stages.
 
@@ -341,7 +339,7 @@ As development continues, this section will be updated with actual testing resul
 
 ---
 
-# Repository Structure
+# 📁 Repository Structure
 
 ```text
 SAIROS/
@@ -378,25 +376,3 @@ SAIROS/
 │   └── mqtt/
 │
 └── dashboard/
-```
-
-The repository structure will be updated as different parts of the project are implemented.
-
----
-
-# Future Scope
-
-Future development of SAIROS can focus on:
-
-* Better autonomous navigation
-* Improved person-detection accuracy
-* Additional environmental sensors
-* Improved thermal and low-light cameras
-* Better underground wireless communication
-* Multi-rover operation
-* Improved mine mapping
-* More detailed rescue dashboards
-* Larger-scale field testing
-
----
-
